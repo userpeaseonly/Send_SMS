@@ -9,7 +9,8 @@ load_dotenv()  # Load environment variables from .env file
 app = FastAPI()
 
 # Replace with your actual Twilio credentials
-account_sid = os.getenv('TWILIO_ACCOUNT_SID')
+# After registering create .env file and include these information.
+account_sid = os.getenv('TWILIO_ACCOUNT_SID') 
 auth_token = os.getenv('TWILIO_AUTH_TOKEN')
 twilio_phone_number = os.getenv('TWILIO_PHONE_NUMBER')
 
