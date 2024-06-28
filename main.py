@@ -4,12 +4,11 @@ from twilio.rest import Client
 from dotenv import load_dotenv
 import os
 
-load_dotenv()  # Load environment variables from .env file
-
+load_dotenv()
 app = FastAPI()
 
-# Replace with your actual Twilio credentials
 # After registering create .env file and include these information.
+# Replace with your actual Twilio credentials
 account_sid = os.getenv('TWILIO_ACCOUNT_SID') 
 auth_token = os.getenv('TWILIO_AUTH_TOKEN')
 twilio_phone_number = os.getenv('TWILIO_PHONE_NUMBER')
